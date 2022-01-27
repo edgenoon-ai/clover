@@ -1,0 +1,16 @@
+
+material landing_pad
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture landing_pad.png
+                filtering none
+                scale 1.0 1.0
+            }
+        }
+    }
+}
