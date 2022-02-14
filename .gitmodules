@@ -1,0 +1,3 @@
+[submodule "clover/examples/clover/examples/VITAL"]
+	path = clover/examples/clover/examples/VITAL
+	url = https://github.com/PUTvision/VITAL.git
