@@ -36,22 +36,22 @@
     <include file="$(find clover)/launch/aruco.launch" if="$(arg aruco)"/>
 
     <!-- optical flow -->
-    <node pkg="nodelet" type="nodelet" name="optical_flow" args="load clover/optical_flow main_camera_nodelet_manager" if="$(arg optical_flow)" clear_params="true" output="screen" respawn="true">
+    <!-- <node pkg="nodelet" type="nodelet" name="optical_flow" args="load clover/optical_flow main_camera_nodelet_manager" if="$(arg optical_flow)" clear_params="true" output="screen" respawn="true">
         <remap from="image_raw" to="main_camera/image_raw"/>
         <remap from="camera_info" to="main_camera/camera_info"/>
         <param name="calc_flow_gyro" value="true"/>
         <param name="roi_rad" value="0.8"/>
-    </node>
+    </node> -->
 
     <node pkg="tf2_ros" type="static_transform_publisher" name="map_flipped_frame" args="0 0 0 3.1415926 3.1415926 0 map map_flipped"/>
 
     <!-- simplified offboard control -->
-    <node name="simple_offboard" pkg="clover" type="simple_offboard" output="screen" clear_params="true">
+    <!-- <node name="simple_offboard" pkg="clover" type="simple_offboard" output="screen" clear_params="true">
         <param name="reference_frames/body" value="map"/>
         <param name="reference_frames/base_link" value="map"/>
         <param name="reference_frames/navigate_target" value="map"/>
         <param name="reference_frames/main_camera_optical" value="map"/>
-    </node>
+    </node> -->
 
     <!-- main camera -->
     <include file="$(find clover)/launch/main_camera.launch" if="$(arg main_camera)">
