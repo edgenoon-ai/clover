@@ -10,7 +10,7 @@
     <cast_shadows>false</cast_shadows>
     <geometry>
         <box>
-            <size>1.0 1.0 1e-3</size>
+            <size>0.66 0.66 1e-3</size>
         </box>
     </geometry>
     <material>
