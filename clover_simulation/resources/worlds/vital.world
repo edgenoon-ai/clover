@@ -20,7 +20,7 @@
     </light>
     <model name='grass_plane'>
       <static>1</static>
-      <link name='link'>
+      <link name='grass_link'>
         <collision name='collision'>
           <geometry>
             <box>
@@ -101,7 +101,7 @@
     </spherical_coordinates>
     <model name='pickup'>
       <static>1</static>
-      <link name='link'>
+      <link name='pickup_link'>
         <collision name='collision'>
           <pose>0 0 0 0 0 -1.5708</pose>
           <geometry>
@@ -138,7 +138,7 @@
       <pose>9.80016 37.3145 0 0 -0 0</pose>
     </model>
     <model name='person_standing'>
-      <link name='link'>
+      <link name='person_standing_link'>
         <inertial>
           <pose>0 -0.1 0.95 0 -0 0</pose>
           <mass>80</mass>
@@ -208,7 +208,7 @@
       <pose>10.6275 35.3343 0 0 -0 0</pose>
     </model>
     <model name='person_walking'>
-      <link name='link'>
+      <link name='person_walking_link'>
         <inertial>
           <pose>0 0 0.95 0 -0 0</pose>
           <mass>80</mass>
@@ -279,7 +279,7 @@
     </model>
     <model name='Lamp Post'>
       <static>1</static>
-      <link name='link'>
+      <link name='lamp_post_link'>
         <collision name='collision'>
           <geometry>
             <mesh>
@@ -315,11 +315,11 @@
       </link>
       <pose>22.2421 56.8739 0 0 -0 0</pose>
     </model>
-    <model name='landing_pad_clone'>
+    <model name='landing_pad_vehicle'>
       <static>1</static>
       <link name='landing_pad_link'>
         <visual name='visual_landing_pad'>
-          <pose>0 0 0 0 -0 1.5708</pose>
+          <pose>0 0 0 0 0 1.5708</pose>
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
@@ -338,12 +338,12 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>8.37822 33.1079 0 0 -0 0</pose>
+      <pose>8.37822 33.1079 0 0 0 0</pose>
     </model>
     <model name='table'>
       <static>1</static>
-      <link name='link'>
-        <collision name='surface'>
+      <link name='table_link_0'>
+        <collision name='table_surface_0'>
           <pose>0 0 1 0 -0 0</pose>
           <geometry>
             <box>
@@ -367,7 +367,7 @@
           </surface>
           <max_contacts>10</max_contacts>
         </collision>
-        <visual name='visual1'>
+        <visual name='visual1_0'>
           <pose>0 0 1 0 -0 0</pose>
           <geometry>
             <box>
@@ -381,7 +381,7 @@
             </script>
           </material>
         </visual>
-        <collision name='front_left_leg'>
+        <collision name='front_left_leg_0'>
           <pose>0.68 0.38 0.5 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -403,7 +403,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='front_left_leg'>
+        <visual name='front_left_leg_0'>
           <pose>0.68 0.38 0.5 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -418,7 +418,7 @@
             </script>
           </material>
         </visual>
-        <collision name='front_right_leg'>
+        <collision name='front_right_leg_0'>
           <pose>0.68 -0.38 0.5 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -440,7 +440,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='front_right_leg'>
+        <visual name='front_right_leg_0'>
           <pose>0.68 -0.38 0.5 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -455,7 +455,7 @@
             </script>
           </material>
         </visual>
-        <collision name='back_right_leg'>
+        <collision name='back_right_leg_0'>
           <pose>-0.68 -0.38 0.5 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -477,7 +477,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='back_right_leg'>
+        <visual name='back_right_leg_0'>
           <pose>-0.68 -0.38 0.5 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -492,7 +492,7 @@
             </script>
           </material>
         </visual>
-        <collision name='back_left_leg'>
+        <collision name='back_left_leg_0'>
           <pose>-0.68 0.38 0.5 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -514,7 +514,7 @@
             </friction>
           </surface>
         </collision>
-        <visual name='back_left_leg'>
+        <visual name='back_left_leg_0'>
           <pose>-0.68 0.38 0.5 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -537,8 +537,8 @@
     </model>
     <model name='table_clone'>
       <static>1</static>
-      <link name='link'>
-        <collision name='surface'>
+      <link name='table_clone_link'>
+        <collision name='table_surface_clone'>
           <pose>0 0 1 0 -0 0</pose>
           <geometry>
             <box>
@@ -738,7 +738,7 @@
       <model name='Lamp Post'>
         <pose>22.2421 56.8739 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='lamp_post_link'>
           <pose>22.2421 56.8739 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -748,7 +748,7 @@
       <model name='asphalt_plane'>
         <pose>13.9724 44.3084 0 0 -0 0</pose>
         <scale>1.8852 1.50971 1</scale>
-        <link name='link'>
+        <link name='asphalt_plane_link'>
           <pose>13.9724 44.3084 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -758,7 +758,7 @@
       <model name='beer'>
         <pose>4.3089 -19.3906 1.1e-05 8.1e-05 0.000195 0.004878</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='beer_link'>
           <pose>4.30892 -19.3906 0.115011 8.1e-05 0.000195 0.004878</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>1.17695 -0.496285 11.8698 1.25117 -0.746043 2.91748</acceleration>
@@ -768,7 +768,7 @@
       <model name='euro_pallet'>
         <pose>6.21361 -14.2056 0.072 0 -1e-06 -0.165673</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='euro_pallet_link'>
           <pose>6.21361 -14.2056 0.072 0 -1e-06 -0.165673</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>1.65465 0.05423 4.07284 -1.89358 -0.790525 -3.14044</acceleration>
@@ -778,7 +778,7 @@
       <model name='euro_pallet_0'>
         <pose>6.76628 -15.5352 0.072 0 -1e-06 -0.095293</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='euro_pallet_0_link'>
           <pose>6.76628 -15.5352 0.072 0 -1e-06 -0.095293</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>1.6458 0.175556 4.07178 1.83854 -0.751638 -3.14015</acceleration>
@@ -788,7 +788,7 @@
       <model name='euro_pallet_1'>
         <pose>7.22031 -14.1707 0.071951 -5e-05 0.000265 -0.141548</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='euro_pallet_1_link'>
           <pose>7.22031 -14.1707 0.071951 -5e-05 0.000265 -0.141548</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>1.01759 0.144406 -4.81546 -0.966505 1.1398 -0.001231</acceleration>
@@ -798,38 +798,48 @@
       <model name='grass_plane'>
         <pose>2.74126 0.128519 -0.01 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='grass_plane_link'>
           <pose>2.74126 0.128519 -0.01 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='landing_pad_clone'>
-        <pose>8.04084 37.3545 1.67036 0 0 -1.56663</pose>
+      <model name='start_landing_pad'>
+        <pose>0 0 0 0 0 -1.56663</pose>
         <scale>1 1 1</scale>
         <link name='landing_pad_link'>
-          <pose>8.04084 37.3545 1.67036 0 0 -1.56663</pose>
+          <pose>0 0 0 0 0 -1.56663</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='landing_pad_clone_clone'>
-        <pose>4.07319 -16.6681 0.001937 0 0 -1.56663</pose>
+      <model name='landing_pad_vehicle'>
+        <pose>8.04084 37.3545 1.615 0 0 -1.56663</pose>
         <scale>1 1 1</scale>
         <link name='landing_pad_link'>
-          <pose>4.07319 -16.6681 0.001937 0 0 -1.56663</pose>
+          <pose>8.04084 37.3545 1.615 0 0 -1.56663</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='landing_pad_clone_clone_0'>
-        <pose>-22.4976 -8.65881 0.020098 0 -0 1.01939</pose>
+      <model name='landing_pad_people'>
+        <pose>4.07319 -16.6681 0 0 0 -1.56663</pose>
         <scale>1 1 1</scale>
         <link name='landing_pad_link'>
-          <pose>-22.4976 -8.65881 0.020098 0 -0 1.01939</pose>
+          <pose>4.07319 -16.6681 0 0 0 -1.56663</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='landing_pad_rotated'>
+        <pose>-22.4976 -8.65881 0 0 -0 1.01939</pose>
+        <scale>1 1 1</scale>
+        <link name='landing_pad_link'>
+          <pose>-22.4976 -8.65881 0 0 -0 1.01939</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -838,7 +848,7 @@
       <model name='mars_rover'>
         <pose>8.33709 -17.2568 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='mars_rover_link'>
           <pose>8.33709 -17.2568 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -848,7 +858,7 @@
       <model name='oak_tree'>
         <pose>17.7597 58.3699 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='oak_tree_link'>
           <pose>17.7597 58.3699 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -858,7 +868,7 @@
       <model name='person_standing'>
         <pose>9.67399 35.3291 0.049845 -2e-06 1.1e-05 -0.978344</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='person_standing_link'>
           <pose>9.67399 35.3291 0.049845 -2e-06 1.1e-05 -0.978344</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0.000685 -0.002625 -9.81116 -0.003699 -0.001234 0.001864</acceleration>
@@ -868,7 +878,7 @@
       <model name='person_standing_0'>
         <pose>8.38165 -16.3139 -8e-06 -1e-06 2.4e-05 -0.498748</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='person_standing_0_link'>
           <pose>8.38165 -16.3139 -8e-06 -1e-06 2.4e-05 -0.498748</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0.933204 -1.89062 -0.903233 1.98827 0.962887 0.058725</acceleration>
@@ -878,7 +888,7 @@
       <model name='person_standing_1'>
         <pose>4.51041 -18.878 -3e-06 5e-06 -1.7e-05 -0.007736</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='person_standing_1_link'>
           <pose>4.51041 -18.878 -3e-06 5e-06 -1.7e-05 -0.007736</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-1.75288 -0.206879 -0.979606 -3.023 -1.45253 2.99118</acceleration>
@@ -888,7 +898,7 @@
       <model name='person_standing_2'>
         <pose>0.235878 -12.1322 -4e-06 5e-06 -1.3e-05 -0.003013</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='person_standing_2_link'>
           <pose>0.235878 -12.1322 -4e-06 5e-06 -1.3e-05 -0.003013</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-1.55651 1.10834 -1.55564 1.86517 -1.33994 -3.04653</acceleration>
@@ -898,7 +908,7 @@
       <model name='person_walking'>
         <pose>20.1954 55.5366 0.049988 2.1e-05 -2e-06 0.016678</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='person_walking_link'>
           <pose>20.1954 55.5366 0.049988 2.1e-05 -2e-06 0.016678</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-0.926636 -2.05095 -2.74462 2.07384 -1.00861 0.071765</acceleration>
@@ -908,7 +918,7 @@
       <model name='pickup'>
         <pose>9.80016 37.3145 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='pickup_link'>
           <pose>9.80016 37.3145 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -918,7 +928,7 @@
       <model name='plastic_cup'>
         <pose>9.703 34.9735 0.068867 1.48844 -0.195279 1.26144</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='plastic_cup_link'>
           <pose>9.76439 34.9528 0.074113 1.48844 -0.195279 1.26144</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>1.5e-05 3.3e-05 -2.5e-05 -0.012849 0.004489 -0.000958</acceleration>
@@ -928,7 +938,7 @@
       <model name='t_brace_part'>
         <pose>9.75434 37.3866 1.84388 -1.71384 -1.52806 1.8361</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='t_brace_part_link'>
           <pose>9.75434 37.3866 1.84388 -1.71384 -1.52806 1.8361</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-1.0483 -5.37801 0.018978 1.3773 0.595713 1.74612</acceleration>
@@ -938,7 +948,7 @@
       <model name='table'>
         <pose>8.07505 37.7315 0.6 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='table_link_1'>
           <pose>8.07505 37.7315 0.6 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -948,7 +958,7 @@
       <model name='table_clone'>
         <pose>8.0788 36.937 0.6 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='link'>
+        <link name='table_clone_link'>
           <pose>8.0788 36.937 0.6 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
@@ -960,7 +970,7 @@
       </light>
     </state>
     <model name='plastic_cup'>
-      <link name='link'>
+      <link name='plastic_cup_link'>
         <pose>0 0 0.065 0 -0 0</pose>
         <inertial>
           <mass>0.0599</mass>
@@ -1025,7 +1035,7 @@
     </model>
     <model name='oak_tree'>
       <static>1</static>
-      <link name='link'>
+      <link name='oak_tree_link'>
         <collision name='collision'>
           <geometry>
             <mesh>
@@ -1087,7 +1097,7 @@
       <pose>17.7597 58.3699 0 0 -0 0</pose>
     </model>
     <model name='t_brace_part'>
-      <link name='link'>
+      <link name='t_brace_part_link'>
         <inertial>
           <pose>0.22079 0 0.04663 0 -0 0</pose>
           <mass>0.5</mass>
@@ -1191,7 +1201,7 @@
       </camera>
     </gui>
     <model name='person_standing_0'>
-      <link name='link'>
+      <link name='person_standing_0_link'>
         <inertial>
           <pose>0 -0.1 0.95 0 -0 0</pose>
           <mass>80</mass>
@@ -1260,7 +1270,32 @@
       </link>
       <pose>8.37904 -16.3163 0 0 -0 0</pose>
     </model>
-    <model name='landing_pad_clone_clone'>
+    <model name='start_landing_pad'>
+      <static>1</static>
+      <link name='landing_pad_link'>
+        <visual name='visual_landing_pad'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>1 1 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://landing_pad/materials/scripts</uri>
+              <uri>model://landing_pad/materials/textures</uri>
+              <name>landing_pad</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0 0 0 0 0 -1.56663</pose>
+    </model>
+    <model name='landing_pad_people'>
       <static>1</static>
       <link name='landing_pad_link'>
         <visual name='visual_landing_pad'>
@@ -1286,7 +1321,7 @@
       <pose>1.86928 -7.45133 1.67036 0 0 -1.56663</pose>
     </model>
     <model name='person_standing_1'>
-      <link name='link'>
+      <link name='person_standing_1_link'>
         <inertial>
           <pose>0 -0.1 0.95 0 -0 0</pose>
           <mass>80</mass>
@@ -1356,7 +1391,7 @@
       <pose>4.50862 -18.8795 0 0 -0 0</pose>
     </model>
     <model name='euro_pallet'>
-      <link name='link'>
+      <link name='euro_pallet_link'>
         <pose>0 0 0 0 -0 0</pose>
         <inertial>
           <mass>20</mass>
@@ -1408,7 +1443,7 @@
       <pose>6.33949 -14.2968 0 0 -0 0</pose>
     </model>
     <model name='euro_pallet_0'>
-      <link name='link'>
+      <link name='euro_pallet_0_link'>
         <pose>0 0 0 0 -0 0</pose>
         <inertial>
           <mass>20</mass>
@@ -1460,7 +1495,7 @@
       <pose>6.85563 -15.5814 0 0 -0 0</pose>
     </model>
     <model name='euro_pallet_1'>
-      <link name='link'>
+      <link name='euro_pallet_1_link'>
         <pose>0 0 0 0 -0 0</pose>
         <inertial>
           <mass>20</mass>
@@ -1512,7 +1547,7 @@
       <pose>7.33093 -14.2323 0 0 -0 0</pose>
     </model>
     <model name='person_standing_2'>
-      <link name='link'>
+      <link name='person_standing_2_link'>
         <inertial>
           <pose>0 -0.1 0.95 0 -0 0</pose>
           <mass>80</mass>
@@ -1581,7 +1616,7 @@
       </link>
       <pose>0.234859 -12.1329 0 0 -0 0</pose>
     </model>
-    <model name='landing_pad_clone_clone_0'>
+    <model name='landing_pad_rotated'>
       <static>1</static>
       <link name='landing_pad_link'>
         <visual name='visual_landing_pad'>
@@ -1608,7 +1643,7 @@
     </model>
     <model name='mars_rover'>
       <static>1</static>
-      <link name='link'>
+      <link name='mars_rover_link'>
         <collision name='solar_panel_collision'>
           <pose>0 -0.06945 0.47293 0 -0 0</pose>
           <geometry>
@@ -2027,7 +2062,7 @@
     </model>
     <model name='asphalt_plane'>
       <static>1</static>
-      <link name='link'>
+      <link name='asphalt_plane_link'>
         <collision name='collision'>
           <geometry>
             <box>
@@ -2070,7 +2105,7 @@
       <pose>13.9724 44.3084 0 0 -0 0</pose>
     </model>
     <model name='beer'>
-      <link name='link'>
+      <link name='beer_link'>
         <pose>0 0 0.115 0 -0 0</pose>
         <inertial>
           <mass>0.39</mass>
